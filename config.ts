@@ -9,7 +9,7 @@ export const defaultConfig: Config = {
   url: "https://learn.microsoft.com/en-us/azure/",
   match: "https://learn.microsoft.com/en-us/azure/<>**",
   maxPagesToCrawl: 99999,
-  outputFileName: "./output/az_<>>.json",
+  outputFileName: "./output/az_<>.json",
   maxTokens: 200000,
   selector: "main"
 };
