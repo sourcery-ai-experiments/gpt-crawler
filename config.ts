@@ -10,6 +10,6 @@ export const defaultConfig: Config = {
   match: "https://learn.microsoft.com/en-us/azure/<>/**",
   maxPagesToCrawl: 99999,
   outputFileName: "./output/az_<>.json",
-  maxTokens: 150000,
+  maxTokens: 200000,
   selector: "main"
 };
