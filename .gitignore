@@ -16,4 +16,4 @@ storage
 .env
 pnpm-lock.yaml
 
-.vs/
+.vs
