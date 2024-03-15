@@ -47,7 +47,55 @@ lint:
     - yamllint@1.35.1
 actions:
   enabled:
-    - trunk-announce
+    - commitizen
+    # : Assistant for writing commit messages that obey a standard
+    - commitlint
+    # : Enforce git commit message standards
+    - git-blame-ignore-revs
+    # : Automatically configure git to use .git-blame-ignore-revs while the file exists
+    - git-lfs
+    # : Git LFS hooks
+    - go-mod-tidy
+    # : Runs go mod tidy when changes are detected to go.mod
+    - go-mod-tidy-vendor
+    # : Runs go mod tidy followed by go mod vendor
+    - hello-world-python
+    # : Prints 'Hello World' to the terminal during pre-commit trigger
+    - npm-check
+    # : Generate notifications if node_modules are out of date
+    - npm-check-pre-push
+    # : Generate notifications if node_modules are out of date as a pre-push hook
+    - poetry-check
+    # : Run 'poetry check' to validate config
+    - poetry-export
+    # : Run 'poetry export' to sync requirements.txt with lock file
+    - poetry-install
+    # : Run 'poetry install' to ensure all locked packages are installed
+    - poetry-lock
+    # : Run 'poetry lock' to update lock file to match pyproject.toml
+    - trufflehog-pre-commit
+    # : Don't allow secrets in commits (via Trufflehog). Enable linter 'trufflehog-git' before running
+    - trunk-check-pre-commit
+    # : Run 'trunk check' whenever you run 'git commit'
+    - trunk-check-pre-push-always
+    # : Always run 'trunk check' whenever you run 'git push'
+    - trunk-cache-prune
+    # : Periodically prune cached trunk files that are no longer needed
     - trunk-check-pre-push
+    # : Run 'trunk check' whenever you run 'git push'
     - trunk-fmt-pre-commit
+    # : Run 'trunk fmt' whenever you run 'git commit'
+    - trunk-share-with-everyone
+    # : Built-in action to generate notifications to turn off single player mode
+    - trunk-single-player-auto-on-upgrade
+    # : Run on-upgrade automatically for users on single-player mode
+    - trunk-single-player-auto-upgrade
+    # : Auto-upgrade trunk version for users on single-player mode
     - trunk-upgrade-available
+    # : Check for and notify about the latest version of the trunk cli
+    - trunk-whoami
+    # : Refresh user's login tokens
+    - trunk-announce
+    # : Git hook for displaying commits tagged with '/trunk announce'
+    - yarn-check
+    # : Generate notifications if node_modules are out of date
