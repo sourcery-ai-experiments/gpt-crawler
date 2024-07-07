@@ -190,7 +190,7 @@ export const defaultConfig: Config = {
   //   "otf",
   //   "cab",
   // ],
-  url: "https://academy.make.com/sitemap.xml",
+  url: "https://www.make.com/sitemap-0.xml",
   match: "",
   maxPagesToCrawl: 1,
   outputFileName: "./output/make.json",
