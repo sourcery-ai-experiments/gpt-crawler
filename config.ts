@@ -191,7 +191,7 @@ export const defaultConfig: Config = {
     "cab",
   ],
   url: "https://academy.make.com/sitemap.xml",
-  // match: "https://*.<>/**",
+  match: "https://*.<>/**",
   maxPagesToCrawl: 1,
   outputFileName: "./output/make-academy.json",
   maxFileSize: 2900,
