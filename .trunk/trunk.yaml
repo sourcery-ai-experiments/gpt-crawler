@@ -29,6 +29,21 @@ lint:
     - shfmt@3.6.0
     - trivy@0.52.2
     - trufflehog@3.79.0
+    - ansible-lint@5.3.2
+    - bandit@1.7.0
+    - black@21.6b0
+    - buf-lint@1.0.0-rc3
+    - buildifier@5.1.0
+    - cfnlint@0.51.0
+    - eslint@7.30.0
+    - gitleaks@7.6.1
+    - gofmt@1.16.7
+    - golangci-lint@1.41.1
+    - isort@5.8.0
+    - mypy@0.910
+    - pylint@2.8.1
+    - rustfmt@1.55.0
+    - semgrep@0.104.0
 actions:
   enabled:
     - trunk-announce
