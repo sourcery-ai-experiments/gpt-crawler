@@ -196,5 +196,5 @@ export const defaultConfig: Config = {
   outputFileName: "./output/make-academy.json",
   maxFileSize: 2900,
   maxTokens: 200000,
-  selector: "main",
+  selector: "body",
 };
