@@ -18,14 +18,13 @@ runtimes:
 # This is the section where you manage your linters. (https://docs.trunk.io/check/configuration)
 lint:
   enabled:
-    - markdown-table-prettify@3.6.0
-    - markdown-link-check@3.12.2
     - ansible-lint@24.6.1
     - bandit@1.7.9
     - black@24.4.2
     - buf-lint@1.34.0
     - buildifier@7.1.2
     - cfnlint@1.5.0
+    - checkov@3.2.174
     - eslint@9.6.0
     - git-diff-check
     - gitleaks@8.18.4
@@ -35,9 +34,10 @@ lint:
     - mypy@1.10.1
     - pylint@3.2.5
     - rustfmt@1.65.0
-    - checkov@3.2.174
     - hadolint@2.12.0
     - markdownlint@0.41.0
+    - markdown-table-prettify@3.6.0
+    - markdown-link-check@3.12.2
     - osv-scanner@1.8.1
     - prettier@3.3.2
     - shellcheck@0.10.0
