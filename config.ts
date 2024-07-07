@@ -191,10 +191,10 @@ export const defaultConfig: Config = {
   //   "cab",
   // ],
   url: "https://academy.make.com/sitemap.xml",
-  match: "https://academy.make.com/**",
+  match: "",
   maxPagesToCrawl: 1,
   outputFileName: "./output/make.json",
   maxFileSize: 2900,
   maxTokens: 200000,
-  // selector: "",
+  selector: "main",
 };
