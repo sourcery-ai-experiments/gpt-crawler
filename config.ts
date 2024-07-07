@@ -196,5 +196,5 @@ export const defaultConfig: Config = {
   outputFileName: "./output/make.json",
   url: "https://www.make.com/",
   match: "https://www.make.com/en/**",
-  selector: "main",
+  selector: "body",
 };
